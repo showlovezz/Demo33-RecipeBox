@@ -1,0 +1,9 @@
+<h1>Show Recipe</h1>
+
+<p><%= @recipe.title %></p>
+
+<p><%= @recipe.description %></p>
+
+<p><%= link_to "Edit", edit_recipe_path(@recipe) %></p>
+<%= link_to "Delete", recipe_path(@recipe), method: :delete, data: {confirm: "Are you sure?"} %>
+<p><%= link_to "Back to index", recipes_path %></p>
