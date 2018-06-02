@@ -1,10 +1,22 @@
-<h1>Hi !</h1>
+<section id="section_recipe_index">
+  <div class="container">
+    <div class="row">
 
-<% @recipes.each do |recipe| %>
-  <ul>
-    <li>
-      <%= link_to recipe.title, recipe_path(recipe) %>
-      <%= recipe.description %>
-    </li>
-  </ul>
-<%end %>
+      <div class="card-deck">
+        <% @recipes.each do |recipe| %>
+          <div class="col-md-4">
+            <%= link_to recipe_path(recipe), class: "no_under_line" do %>
+              <div class="card mt-4">
+                <%= image_tag recipe.image.url , class: "card-img-top", style:"height: 300px;" %>
+                <div class="card-footer bg-info">
+                  <h5 class="text-white"><%= recipe.title %></h5>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        <%end %>
+      </div>
+
+    </div>
+  </div>
+</section>

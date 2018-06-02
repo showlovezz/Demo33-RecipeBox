@@ -1,5 +1,7 @@
 <h1>Show Recipe</h1>
 
+<p><%= image_tag @recipe.image.url, class: "img-fluid img-thumbnail rounded mx-auto d-block" %></p>
+
 <p><%= @recipe.title %></p>
 
 <p><%= @recipe.description %></p>

@@ -1,0 +1,16 @@
+body {
+  background-color: #FFF5EE;
+}
+
+#section_recipe_index {
+  .container {
+    .row {
+      .no_under_line {
+        text-decoration: none;
+        .card:hover {
+          box-shadow: 0 0 3px 3px #888;
+        }
+      }
+    }
+  }
+}
