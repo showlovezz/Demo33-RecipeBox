@@ -1,3 +1,25 @@
 // Place all the styles related to the recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#recipe_info, #ingredients, #directions {
+  background-color: white;
+  min-height: 320px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#section_recipe_show {
+  .img-fluid {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+#section_recipe_index {
+  .card {
+    .img-fluid {
+      max-width: 100%;
+      height: 270px;
+    }
+  }
+}
