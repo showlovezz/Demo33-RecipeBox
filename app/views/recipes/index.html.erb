@@ -6,7 +6,7 @@
         <% @recipes.each do |recipe| %>
           <div class="col-md-4">
             <%= link_to recipe_path(recipe), class: "no_under_line" do %>
-              <div class="card mt-4">
+              <div class="card mb-4">
                 <%= image_tag recipe.image.url , class: "card-img-top", style:"height: 300px;" %>
                 <div class="card-footer bg-info">
                   <h5 class="text-white"><%= recipe.title %></h5>
